@@ -25,6 +25,7 @@ console.log(response)
 function App(){
   return(
     <div>
+      <h2>Hello React</h2>
       <h1 style={{color:"blue"}}> All Products </h1>
     {response.data.map(each=>
       <Parent key={each.id}>
@@ -32,7 +33,7 @@ function App(){
         <h1>{each.title}</h1>
         <p>{each.description}</p>
         <h3>{each.category}</h3>
-        <button style={{color:"blue"}}>Buy Now</button>
+        <button style={{color:"green"}}>Buy Now</button>
       </Parent>
       )}
     </div>
