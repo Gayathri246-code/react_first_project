@@ -25,14 +25,14 @@ console.log(response)
 function App(){
   return(
     <div>
-      <h1>Products</h1>
+      <h1 style={{color:"blue"}}> All Products </h1>
     {response.data.map(each=>
       <Parent key={each.id}>
         <img src={each.image} style={{width:"250px"}} />
         <h1>{each.title}</h1>
         <p>{each.description}</p>
         <h3>{each.category}</h3>
-        <button>Buy Now</button>
+        <button style={{color:"blue"}}>Buy Now</button>
       </Parent>
       )}
     </div>
